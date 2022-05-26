@@ -1,0 +1,202 @@
+/* 
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+#### Text
+
+- Very dark desaturated blue: hsl(238, 29%, 16%)
+- Soft red: hsl(14, 88%, 65%)
+
+#### Gradient
+
+Background gradient:
+
+- Soft violet: hsl(273, 75%, 66%)
+- Soft blue: hsl(240, 73%, 65%)
+
+### Neutral
+
+#### Text
+
+- Very dark grayish blue: hsl(237, 12%, 33%)
+- Dark grayish blue: hsl(240, 6%, 50%)
+
+#### Dividers
+
+- Light grayish blue: hsl(240, 5%, 91%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 12px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700
+ */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(to bottom, #af67e9, #6565e7);
+}
+
+main {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section {
+  width: 85vw;
+  max-width: 21rem;
+  background-color: white;
+  padding: 10rem 1.5rem 3rem 1.5rem;
+  border-radius: 1rem;
+  position: relative;
+  background-image: url("/images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 35px -10px;
+  background-size: 78%;
+}
+
+@media screen and (min-width: 700px) {
+  main section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 900px;
+    padding: 3rem 3rem 3rem 20rem;
+    /* overflow: hidden; */
+    background-image: url("/images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: -200px;
+    background-size: contain;
+  }
+}
+
+main section .img-container {
+  z-index: 99;
+}
+
+main section .img-container .img {
+  background-image: url("/images/illustration-woman-online-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  position: absolute;
+  width: 250px;
+  height: 270px;
+  top: -155px;
+  left: 40px;
+  z-index: 100;
+}
+
+@media screen and (min-width: 700px) {
+  main section .img-container .img {
+    top: 9%;
+    left: -30px;
+  }
+}
+
+main section .faq-container h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media screen and (min-width: 700px) {
+  main section .faq-container h1 {
+    text-align: left;
+  }
+}
+
+main section .faq-container .question {
+  font-size: 12px;
+  border-bottom: 1px solid #e7e7e9;
+}
+
+main section .faq-container .question h3 {
+  color: #4a4b5e;
+  font-weight: 400;
+  margin: 0.9rem 0 0.6rem 0;
+}
+
+main section .faq-container .question .font-weight {
+  font-weight: 700;
+}
+
+main section .faq-container .question p {
+  color: #787887;
+  line-height: 1.5;
+  margin-bottom: 0.9rem;
+  /* JS altration */
+  height: 0;
+  overflow: hidden;
+}
+
+main section .faq-container .question .show-height {
+  height: auto;
+}
+
+main section .faq-container .question div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section .faq-container .question div span {
+  cursor: pointer;
+}
+
+footer {
+  background-color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+@media screen and (min-width: 700px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer p + p {
+    margin-left: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
