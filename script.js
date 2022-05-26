@@ -1,3 +1,4 @@
+"use strict";
 const icons = document.querySelectorAll(".icon");
 
 icons.forEach((icon) => {
@@ -10,3 +11,6 @@ icons.forEach((icon) => {
     targetElement.classList.toggle("show-height");
   });
 });
+
+
+
