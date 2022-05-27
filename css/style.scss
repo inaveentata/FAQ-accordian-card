@@ -95,6 +95,10 @@ main {
           /* JS altration */
           height: 0;
           overflow: hidden;
+
+          @media screen and (min-width: 750px){
+            padding-right: 2rem;
+          }
         }
         .show-height {
           height: auto;

@@ -113,6 +113,12 @@ main section .faq-container .question p {
   overflow: hidden;
 }
 
+@media screen and (min-width: 750px) {
+  main section .faq-container .question p {
+    padding-right: 2rem;
+  }
+}
+
 main section .faq-container .question .show-height {
   height: auto;
 }
