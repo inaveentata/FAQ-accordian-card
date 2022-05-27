@@ -29,7 +29,7 @@ Click [here](./Screenshot%20.png) to see the screenshot of completed challenge
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/inaveentata/FAQ-accordian-card)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Live Site URL: [Live site URL](https://faq-accordian-card-27-may-2022.netlify.app/)
 
 ## My process
 
